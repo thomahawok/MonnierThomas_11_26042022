@@ -1,0 +1,10 @@
+.about{
+    margin: 20px;
+}
+
+/* Desktop */
+@media (min-width: 640px) {
+    .about{
+        margin: 20px 100px;
+    }
+}
