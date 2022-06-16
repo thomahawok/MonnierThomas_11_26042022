@@ -1,4 +1,3 @@
-//@ts-check
 /**
  * Component - Loader
  * @returns {React.ReactElement} JSX.Element - loader element

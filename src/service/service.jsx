@@ -2,14 +2,15 @@
 import axios from 'axios'
 
 /**
- * get housing data from API
+ * Get housing data from API
  * @async
  * @return {Promise<HousingData>} The data from the URL.
  */
 
 export async function getData() {
   try {
-    const response = await axios.get(`./datas/data.json`)
+    const response = await axios.get(`../datas/data.json`)
+    console.log(response.data)
     return response.data
   } catch (error) {
     console.error(error)

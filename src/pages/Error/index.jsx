@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
+/**
+ * Error 404 page
+ * @returns  {React.ReactElement} JSX.Element
+ */
 function Error() {
   return (
     <div className="error">
@@ -12,5 +16,5 @@ function Error() {
       </Link>
     </div>
   )
-} 
+}
 export default Error

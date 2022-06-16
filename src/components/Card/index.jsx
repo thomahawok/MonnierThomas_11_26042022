@@ -1,9 +1,14 @@
-//@ts-expect-error
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+/**
+ * Accommodation card
+ * @param {Object} logement
+ * @param {String} logement.id
+ * @param {String} logement.cover
+ * @param {String} logement.title
+ * @returns  {React.ReactElement} JSX.Element
+ */
 function card({ logement }) {
-  console.log(logement)
   return (
     <Link className="listing__link" to={`fiche-logement/${logement.id}`}>
       <article className="listing__card">

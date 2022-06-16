@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Housing from './pages/Housing'
+import HousingDetails from './pages/HousingDetails'
 import Error from './pages/Error'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
-          <Route path="fiche-logement/:id" element={<Housing />} />
+          <Route path="fiche-logement/:id" element={<HousingDetails />} />
           {/*path="*" renvoi à la page erreur 404 si l'url de rien de déclaré au dessus*/}
           <Route path="*" element={<Error />} />
         </Routes>
