@@ -1,6 +1,6 @@
 /**
  * [Array with description texts]
- * @type {<Array.<AboutDectription>}
+ * @type {Array.<AboutDectription>}
  */
 
 /**About Description

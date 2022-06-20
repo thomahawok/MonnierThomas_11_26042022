@@ -4,7 +4,7 @@ import Card from '../../components/Card'
 import Loader from '../../components/Loader'
 
 /**
- *
+ * Presentation of all accommodation
  * @returns {React.ReactElement} JSX.Element - List of accommodation
  */
 function Housing() {
@@ -36,13 +36,9 @@ function Housing() {
 
   return (
     <>
-      {loading && (
-        <span className="loader mt-5">
-          <Loader />
-        </span>
-      )}
-
-      {!loading && (
+      {loading ? (
+        <Loader />
+      ) : (
         <>
           {LogementsData.map((logement) => (
             <Card key={logement.id} logement={logement} />

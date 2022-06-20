@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 
 /**
  * Collapse card
- * @param {Object}          props
- * @param {String}          props.title
- * @param {String | Array}  props.content
+ * @param {{title : String, content: String}}    props
  * @returns  {React.ReactElement} JSX.Element
  */
 
-function Collapse(props) {
+function Collapse({ title, content }) {
   const [show, setShow] = useState(false)
-  const isArray = Array.isArray(props.content)
+  const isArray = Array.isArray(content)
 
   return (
     <>
@@ -19,23 +17,21 @@ function Collapse(props) {
           className={show ? 'collapse__title true' : 'collapse__title false'}
           onClick={() => setShow(!show)}
         >
-          <p>{props.title}</p>
+          <p>{title}</p>
         </div>
         <div
           className={
-            show
-              ? 'collapse__describle collapse__describle__show'
-              : 'collapse__describle collapse__describle__hide'
+            show ? 'collapse__describle true' : 'collapse__describle false'
           }
         >
           {isArray ? (
             <ul>
-              {props.content.map((prop, index) => (
-                <li key={index}>{prop}</li>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
           ) : (
-            <p>{props.content}</p>
+            <p>{content}</p>
           )}
         </div>
       </div>

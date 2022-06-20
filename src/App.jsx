@@ -12,9 +12,9 @@ function App() {
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
           <Route path="fiche-logement/:id" element={<HousingDetails />} />
+          <Route path="/about" element={<About />} />
           {/*path="*" renvoi à la page erreur 404 si l'url de rien de déclaré au dessus*/}
           <Route path="*" element={<Error />} />
         </Routes>

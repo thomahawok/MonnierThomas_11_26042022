@@ -1,11 +1,9 @@
 /**
  * Return tag
- * @param {Object} props
- * @param {String} props.name
+ * @param {Strinf} name
  * @returns {React.ReactElement} JSX.Element
  */
-function Tag(props) {
-  console.log(props)
-  return <button className="tag">{props.name}</button>
+function Tag({ name }) {
+  return <button className="tag">{name}</button>
 }
 export default Tag

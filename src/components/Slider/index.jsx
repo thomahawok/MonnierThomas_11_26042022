@@ -7,7 +7,6 @@ import React, { useState } from 'react'
 function Slider({ allPictures }) {
   const [currentPicture, setCurrentPicture] = useState(0)
   const length = allPictures.length
-  console.log(allPictures)
 
   function nextSlide() {
     setCurrentPicture(currentPicture === length - 1 ? 0 : currentPicture + 1)

@@ -33,7 +33,7 @@ function DetailHousing({ logement }) {
         </div>
 
         <div className="article__profile">
-          <Rating count={logement.rating} />
+          <Rating numberOfStars={logement.rating} />
           <div className="article__host">
             <h3>{logement.host.name.replace(' ', '\n')}</h3>
             <img src={logement.host.picture} alt={logement.host.name} />

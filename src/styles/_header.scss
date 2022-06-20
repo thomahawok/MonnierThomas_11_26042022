@@ -25,11 +25,15 @@
     font-weight: 500;
     font-size: 12px;
 
-    &:hover {
+    &__active {
       text-decoration: underline;
     }
-  }
 
+    &:hover {
+      text-decoration: underline;
+      color: #ff9393;
+    }
+  }
 }
 
 

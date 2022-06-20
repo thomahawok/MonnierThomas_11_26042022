@@ -10,7 +10,7 @@ function About() {
   return (
     <>
       <div className="banner">
-        <div className="banner__image banner__image--tall">
+        <div className="banner__image">
           <img
             src={about}
             alt="Kluane national park and reserve of canada, canada"
@@ -19,8 +19,8 @@ function About() {
       </div>
 
       <div className="about">
-        {AboutDescriptions.map((item) => (
-          <Collapse title={item.title} content={item.text} key={item.title} />
+        {AboutDescriptions.map((item, index) => (
+          <Collapse key={index} title={item.title} content={item.text} />
         ))}
       </div>
     </>

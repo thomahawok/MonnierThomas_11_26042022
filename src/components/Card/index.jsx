@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 /**
- * Accommodation card
- * @param {Object} logement
- * @param {String} logement.id
- * @param {String} logement.cover
- * @param {String} logement.title
+ * Shows the details of the accommodations
+ * @param {Object[]}        logement
+ * @param {Number}          logement[].id
+ * @param {String}          logement[].cover
+ * @param {String}          logement[].title
  * @returns  {React.ReactElement} JSX.Element
  */
 function card({ logement }) {

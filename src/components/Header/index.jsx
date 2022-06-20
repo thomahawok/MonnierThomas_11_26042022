@@ -15,10 +15,20 @@ function Header() {
         </Link>
 
         <div className="menu">
-          <NavLink className="menu__link" to="/">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? 'menu__link menu__link__active' : 'menu__link'
+            }
+            to="/"
+          >
             Accueil
           </NavLink>
-          <NavLink className="menu__link" to="/about">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? 'menu__link menu__link__active' : 'menu__link'
+            }
+            to="/about"
+          >
             A Propos
           </NavLink>
         </div>

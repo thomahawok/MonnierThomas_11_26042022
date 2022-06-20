@@ -45,7 +45,7 @@
     padding-left:0;
   }
 
-  &__hide {
+  &.false {
     transform: translate(0,-150px);
     visibility: hidden;
     opacity: 0;
@@ -53,7 +53,7 @@
     height: 0;
   }
 
-  &__show {
+  &.true {
     padding: 1.5em;
     border-radius: 10px;
     transform: translate(0,-10px);
