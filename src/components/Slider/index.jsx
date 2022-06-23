@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 /**
  * Display the slider
- * @param {Object[]} allPictures
+ * @param {Object[]} allPictures All pictures of the accommodation
  * @returns {React.ReactElement} JSX.Element
  */
 function Slider({ allPictures }) {

@@ -1,12 +1,7 @@
-/**
- * [Array with description texts]
- * @type {Array.<AboutDectription>}
- */
-
 /**About Description
- * @typedef {Object} AboutDectription
- * @param {String} title
- * @param {String} text
+ * @typedef {Object[]} AboutDectription
+ * @param {String} AboutDectription[].title
+ * @param {String} AboutDectription[].text
  */
 
 const AboutDescriptions = [

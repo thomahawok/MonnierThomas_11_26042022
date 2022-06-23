@@ -5,16 +5,16 @@ import Collapse from '../../components/Collapse'
 
 /**
  * Shows the details of the accommodations
- * @param {Object}          logement
- * @param {Object[]}        logement.pictures photos of the accommodation
- * @param {String}          logement.title
- * @param {String}          logement.location
- * @param {String}          logement.tag
- * @param {String}          logement.rating
- * @param {String}          logement.host.name
- * @param {String}          logement.host.picture
- * @param {String}          logement.description
- * @param {String}          logement.equipements
+ * @param {Object[]}        logement
+ * @param {Object[]}        logement[].pictures photos of the accommodation
+ * @param {String}          logement[].title
+ * @param {String}          logement[].location
+ * @param {String}          logement[].tag
+ * @param {String}          logement[].rating
+ * @param {String}          logement[].host.name
+ * @param {String}          logement[].host.picture
+ * @param {String}          logement[].description
+ * @param {String}          logement[].equipements
  * @returns  {React.ReactElement} JSX.Element
  */
 

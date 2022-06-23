@@ -1,6 +1,6 @@
 /**
  * Return tag
- * @param {Strinf} name
+ * @param {Strinf} name tag name
  * @returns {React.ReactElement} JSX.Element
  */
 function Tag({ name }) {
